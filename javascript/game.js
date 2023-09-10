@@ -72,12 +72,9 @@ let startTimer = () => {
         item.addEventListener('click',playGame);
         }else{
             username = prompt('Enter username : ');
-
             user.textContent = username;
         }
     })
-
-    
 reset.addEventListener('click',() => {
     points =0;
     scorePoints.textContent =points;
