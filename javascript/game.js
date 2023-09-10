@@ -33,6 +33,9 @@ const playGame = () => {
         if(points === 6){
            outer.style.display = 'block';
         }
+        if(points === 20){
+            outer.style.display = 'block';
+        }
     }
 
     continueBtn.addEventListener('click',() => {
@@ -68,11 +71,13 @@ let startTimer = () => {
         item.style.display = 'block';
         item.addEventListener('click',playGame);
         }else{
-            username = prompt('Enter username : ')
+            username = prompt('Enter username : ');
+
+            user.textContent = username;
         }
     })
 
-    user.textContent = username;
+    
 reset.addEventListener('click',() => {
     points =0;
     scorePoints.textContent =points;
