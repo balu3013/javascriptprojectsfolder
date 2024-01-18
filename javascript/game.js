@@ -5,7 +5,7 @@ let reset = document.querySelector('.reset');
 let scorePoints = document.querySelector('.span');
 let displayTime = document.querySelector('.display-time');
 let continueBtn = document.querySelector('.continue');
-
+// adding comment to the exisisting code
 var points = 0;
 
 let outer = document.querySelector('.outer');
